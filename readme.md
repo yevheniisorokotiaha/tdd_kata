@@ -1,5 +1,6 @@
 # Requirements
 
+
 `AuthorizationHandler` is wired into ASP.NET and responsible to authorize user requests based on `ClaimsPrincipal` instance.
 
 If authorization is successful it should return success result, otherwise error.
