@@ -1,13 +1,10 @@
-using System;
 using Xunit;
-using TddKata;
 using System.Security.Claims;
 using FluentAssertions;
-using LanguageExt;
 
 namespace TddKata.Tests
 {
-    public class UnitTest1
+    public class AuthorizationHandler_Tests
     {
         [Fact]
         public void AuthorizeUser_ReturnSuccessResult_WhenNewUser() {
@@ -16,5 +13,8 @@ namespace TddKata.Tests
             var unit = authorizationHandler.AuthorizeUser(claim);
             unit.IsSuccessful.Should().Be(true);
 		}
+        [Fact]
+        public void AuthorizeUser_ReceiveVisitorRole_WhenNewUser() { 
+        }
     }
 }
