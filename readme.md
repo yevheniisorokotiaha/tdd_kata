@@ -1,4 +1,4 @@
-# Requirements
+# Requirements 
 
 `AuthorizationHandler` is wired into ASP.NET and responsible to authorize user requests based on `ClaimsPrincipal` instance.
 
