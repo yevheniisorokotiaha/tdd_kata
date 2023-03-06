@@ -9,6 +9,7 @@ namespace TddKata
     {
         public Result<Unit> AuthorizeUser(ClaimsPrincipal user)
         {
+
             throw new NotImplementedException();
         }
     }
