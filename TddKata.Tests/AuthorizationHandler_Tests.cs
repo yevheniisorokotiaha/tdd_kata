@@ -14,7 +14,11 @@ namespace TddKata.Tests
             unit.IsSuccessful.Should().Be(true);
 		}
         [Fact]
-        public void AuthorizeUser_ReceiveVisitorRole_WhenNewUser() { 
-        }
+        public void AuthorizeUser_ReceiveVisitorRole_WhenNewUser() {
+			var authorizationHandler = new AuthorizationHandler();
+			var claim = new ClaimsPrincipal();
+			var unit = authorizationHandler.AuthorizeUser(claim);
+            Assert.False(true);
+		}
     }
 }
