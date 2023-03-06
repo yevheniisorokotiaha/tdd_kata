@@ -5,8 +5,8 @@ using System.Text;
 using LanguageExt;
 
 namespace TddKata.Handlers {
-	internal class CreateUserRequestHandler {
-		public Result<Unit> Execute(CreateUserRequest request) {
+	public class CreateUserRequestHandler {
+		public virtual Result<Unit> Execute(CreateUserRequest request) {
 			return new Result<Unit>(Unit.Default);
 		}
 	}
