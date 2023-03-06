@@ -16,3 +16,6 @@ In case of successful authorization User identity should be set into `ICurrentUs
 Calls to `ICreateUserHandler` and `IGetUserHandler` should have a valid user context configured.
 
 In order to support tests in non-production environment (`IApplicationInfo.IsRunningProduction`) when user id is `knownIdString` it is created with `SysAdmin` role.
+
+
+1
